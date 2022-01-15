@@ -1,3 +1,4 @@
+import 'package:app/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,9 +11,6 @@ class MyApp extends StatelessWidget {
 
   @override //UI is built here, whenever UI refereshes build is called
   Widget build(BuildContext context) {
-    return MaterialApp(
-        home: Scaffold(
-            appBar: AppBar(title: const Text('intL Tracker')),
-            body: Center(child: Text('Status Check'))));
+    return MaterialApp(home: HomePage());
   }
 }
